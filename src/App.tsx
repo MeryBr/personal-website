@@ -56,8 +56,8 @@ const App: React.FC = () => {
   return (
     <div
       className={`min-h-screen text-white transition-colors duration-300 ${darkMode
-          ? 'bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-lime-300'
-          : 'bg-gradient-to-br from-indigo-600 via-cyan-500 to-teal-400 text-white'
+        ? 'bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-lime-300'
+        : 'bg-gradient-to-br from-indigo-600 via-cyan-500 to-teal-400 text-white'
         }`}
     >
       <div className="fixed inset-0 -z-10 pointer-events-none">
