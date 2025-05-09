@@ -54,10 +54,9 @@ Il inclut un design responsive, des composants personnalisés, des animations et
 
 ---
 
-## 🛠️ Scripts
+## ✨ Estado / Status
 
-```bash
-npm install       # instalar dependencias / install dependencies
-npm run dev       # entorno desarrollo / dev server
-npm run build     # compilar / build
-npm run deploy    # publicar en GitHub Pages / deploy to GitHub Pages
+🌱 Primera versión online. Seguirá creciendo, como yo.  
+🌱 First version online. More to come.  
+🌱 Première version en ligne. Ce n’est que le début.
+
