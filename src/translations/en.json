@@ -1,0 +1,50 @@
+{
+  "home": "Home",
+  "trayectoria": "My Journey",
+  "proyectos": "Projects",
+  "motivacion": "Motivation",
+  "contacto": "Contact",
+  "slogan": "Frontend Developer — sharp logic, instinctive problem-solver",
+  "intro": "I think like a developer, design like a user, and solve problems like someone who sees beyond the bug.\n\nEvery line of code I write has purpose. I learn exactly what the project needs and apply it when it truly matters. I don’t collect tools - I turn them into impact.\n\nI’m still being polished, yes - but I already bring value, clarity, and direction. I’m not the final product. I’m evolution in motion.\n\nAnd what I carry inside… can’t be taught.",
+  "timeline": {
+    "2018": {
+      "title": "Versatile beginnings",
+      "description": "I started my professional journey in administration and customer service roles, developing key skills in organization, communication, and problem-solving."
+    },
+    "2022": {
+      "title": "Turning to tech",
+      "description": "I began formal training in software development, combining my background with studies in programming, databases, and user interface design."
+    },
+    "2023": {
+      "title": "Hands-on experience",
+      "description": "I joined a real dev team for my internship, contributing to frontend and backend modules, working in Agile sprints and real product delivery cycles."
+    },
+    "2024": {
+      "title": "Web developer role",
+      "description": "I joined a corporate web project, working on a custom internal framework, delivering new features, integrating APIs, and improving user experience in Agile teams."
+    },
+    "2025": {
+      "title": "Refinement and growth",
+      "description": "I strengthen my technical and creative identity with the launch of this portfolio and deepening specialization in modern frontend. I'm evolution in motion."
+    }
+  },
+  "projects": {
+    "animals": {
+      "title": "Animal Match Game",
+      "date": "Apr. 2025",
+      "affiliation": "In collaboration with Lemoncoders",
+      "description": "“Animal Match Game” is a visual memory game for children. The goal is to match pairs of animal cards like puppies, chicks, or piglets. 🐶🐣🐷",
+      "features": [
+        "Cards are initially displayed face down",
+        "Matching pairs remain visible",
+        "Each pair found brings a sense of achievement",
+        "Designed to stimulate children’s memory skills"
+      ]
+    }
+  },
+  "verDemo": "View demo",
+  "verRepositorio": "View repository",
+  "motivacionTitulo": "Motivation",
+  "motivacionTexto": "I never imagined I’d end up in the world of web development.\n\nFor years, I moved between patients, paperwork, logistics, and people. I did a bit of everything: I cared, I organized, I solved problems. I liked making things work for others.\n\nBut something inside me was asking for more. More creativity, more challenge, more future.\n\nI started exploring what else was out there that I didn’t know yet… but that connected with who I already was, and where I could be even more myself.\n\nI discovered programming wasn’t just writing code — it was solving problems, designing experiences, improving systems, and understanding needs.\n\nI didn’t leave who I was behind. I transformed it.\n\nToday, I don’t treat patients, but I still listen. I don’t handle paperwork, but I organize logic. I don’t translate languages, but I turn ideas into interfaces.\n\nCode also cares, organizes, and solves. But it also builds. And for someone like me, that was a revelation.\n\nThis isn’t a change in career. It’s evolution with purpose.\n\nSince then, I haven’t stopped. Not just learning, but imagining. Because now I know I can create what I used to only manage.",
+  "contactoTexto": "I didn’t come to please.\nI don’t make noise.\nI’m not for everyone.\nBut if something here clicked…\n Here are my coordinates."
+}

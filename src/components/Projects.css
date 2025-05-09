@@ -1,0 +1,83 @@
+.section-title {
+    font-family: 'Courier New', monospace;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 12px #00bfff;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+html.dark .section-title {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+.projects-section {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    backdrop-filter: blur(6px);
+    color: white;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: #93c5fd;
+    margin-bottom: 0.5rem;
+}
+
+.project-date,
+.project-affiliation {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-features {
+    list-style: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.project-features li {
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-button {
+    text-decoration: none;
+    background: #1d4ed8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-button:hover {
+    background: #2563eb;
+}

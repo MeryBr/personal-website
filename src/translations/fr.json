@@ -1,0 +1,50 @@
+{
+    "home": "Accueil",
+    "trayectoria": "Mon Parcours",
+    "proyectos": "Projets",
+    "motivacion": "Motivation",
+    "contacto": "Contact",
+    "slogan": "Développeuse Frontend — logique affûtée, instinct qui construit",
+    "intro": "Je pense comme une développeuse, je conçois comme une utilisatrice, et je résous comme quelqu’un qui voit au-delà du bug.\n\nChaque ligne de code que j’écris a un sens. J’apprends ce dont le projet a besoin et je l’applique au moment où cela fait toute la différence. Je ne collectionne pas les outils - je les transforme en solutions.\n\nJe suis encore en phase de taille, oui - mais j’apporte déjà de la valeur, de la clarté et une vraie direction. Je ne suis pas un produit fini. Je suis une évolution avec du caractère.\n\nEt ce que j’ai en moi… ça ne s’enseigne pas.",
+    "timeline": {
+        "2018": {
+            "title": "Débuts polyvalents",
+            "description": "J’ai commencé ma carrière dans l’administration et le service client, développant des compétences clés en organisation, communication et résolution de problèmes."
+        },
+        "2022": {
+            "title": "Virage vers le développement",
+            "description": "J’ai entamé une formation technique en développement logiciel, alliant mon expérience passée à l’apprentissage du code, des bases de données et de l’UI."
+        },
+        "2023": {
+            "title": "Expérience concrète",
+            "description": "J’ai intégré une équipe de développement en stage, contribuant à des modules frontend et backend, avec des méthodologies Agile et des livrables réels."
+        },
+        "2024": {
+            "title": "Rôle de développeuse web",
+            "description": "J’ai rejoint un projet d’entreprise sur un framework interne, développant de nouvelles fonctionnalités, intégrant des APIs et optimisant l’expérience utilisateur."
+        },
+        "2025": {
+            "title": "Affirmation et montée en puissance",
+            "description": "Je consolide mon profil technique et créatif avec le lancement de ce portfolio et une spécialisation frontend avancée. L’évolution continue, avec personnalité."
+        }
+    },
+    "projects": {
+        "animals": {
+            "title": "Jeu de Mémoire des Animaux",
+            "date": "Avr. 2025",
+            "affiliation": "En collaboration avec Lemoncoders",
+            "description": "“Jeu de Mémoire des Animaux” est un jeu visuel pour enfants. L’objectif est de retrouver des paires d’animaux comme des chiots, poussins ou cochonnets. 🐶🐣🐷",
+            "features": [
+                "Les cartes sont d'abord cachées face contre table",
+                "Les paires trouvées restent visibles",
+                "Chaque paire est une petite victoire visuelle",
+                "Conçu pour stimuler la mémoire des enfants"
+            ]
+        }
+    },
+    "verDemo": "Voir la démo",
+    "verRepositorio": "Voir le dépôt",
+    "motivacionTitulo": "Motivation",
+    "motivacionTexto": "Je n’aurais jamais imaginé me retrouver dans le développement web.\n\nPendant des années, j’ai travaillé entre patients, dossiers, démarches et personnes. Je faisais un peu de tout : je prenais soin, j’organisais, je résolvais. J’aimais faire en sorte que tout fonctionne pour les autres.\n\nMais quelque chose en moi en demandait plus. Plus de création, plus de défi, plus d’avenir.\n\nJ’ai commencé à chercher ce qu’il y avait d’autre, que je ne connaissais pas encore… mais qui résonnait avec ce que je suis, et où je pourrais l’être encore plus.\n\nJ’ai découvert que coder, ce n’est pas juste écrire du code : c’est penser des solutions, concevoir des expériences, améliorer des systèmes et comprendre des besoins.\n\nJe n’ai pas renié ce que j’étais. Je l’ai transformé.\n\nAujourd’hui, je ne soigne plus de patients, mais j’écoute toujours. Je ne gère plus de papiers, mais j’organise des logiques. Je ne traduis plus de langues, mais je transforme des idées en interfaces.\n\nLe code aussi soigne, organise et résout. Mais il construit en plus. Et pour quelqu’un comme moi, ça a tout changé.\n\nCe n’est pas un changement de métier. C’est une évolution guidée par un vrai sens.\n\nDepuis, je ne me suis pas arrêtée. Pas seulement d’apprendre, mais d’imaginer. Parce que maintenant, je sais que je peux créer ce que je me contentais d’administrer autrefois.",
+    "contactoTexto": "Je ne suis pas là pour plaire.\nJe ne fais pas de bruit.\nJe ne suis pas pour tout le monde.\nMais si quelque chose ici a fait tilt…\n Voici mes coordonnées."
+}

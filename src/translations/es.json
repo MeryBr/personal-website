@@ -1,0 +1,50 @@
+{
+  "home": "Inicio",
+  "trayectoria": "Mi Trayectoria",
+  "proyectos": "Proyectos",
+  "motivacion": "Motivación",
+  "contacto": "Contacto",
+  "slogan": "Frontend Developer — lógica que corta, instinto que construye",
+  "intro": "Pienso como desarrolladora, diseño como usuaria y resuelvo como quien ve más allá del bug.\n\nCada línea de código que escribo tiene intención. Aprendo lo que el proyecto necesita y lo aplico justo cuando se vuelve clave. No acumulo: transformo.\n\nEstoy en fase de pulido, sí - pero ya aporto valor, claridad y dirección. No soy producto final. Soy evolución con carácter.\n\nY lo que tengo por dentro… no se enseña.",
+  "timeline": {
+    "2018": {
+      "title": "Inicios polivalentes",
+      "description": "Comencé mi trayectoria profesional en entornos administrativos y atención al cliente, desarrollando habilidades clave en organización, comunicación y resolución de incidencias."
+    },
+    "2022": {
+      "title": "Transición al desarrollo",
+      "description": "Inicié mi formación técnica en desarrollo de software, combinando experiencia laboral previa con estudios en programación, bases de datos y diseño de interfaces."
+    },
+    "2023": {
+      "title": "Prácticas profesionales",
+      "description": "Participé activamente en el ciclo completo de desarrollo, aplicando metodologías ágiles y contribuyendo en módulos frontend y backend reales dentro de equipos multidisciplinares."
+    },
+    "2024": {
+      "title": "Incorporación laboral",
+      "description": "Me uní a un proyecto corporativo como desarrolladora web, aportando soluciones en un framework interno, optimizando funcionalidades e integrando APIs en entornos Agile."
+    },
+    "2025": {
+      "title": "Pulido y proyección",
+      "description": "Consolido mi perfil técnico y creativo con el lanzamiento de este portfolio y la especialización en frontend moderno. Evolución constante, con visión y carácter propio."
+    }
+  },
+  "projects": {
+    "animals": {
+      "title": "Buscador de Animales",
+      "date": "Abr. 2025",
+      "affiliation": "Asociada con Lemoncoders",
+      "description": "“Buscador de Animales” es un juego de memoria visual para niños. El objetivo es encontrar parejas de cartas con animalitos como perritos, pollitos o cerditos. 🐶🐣🐷",
+      "features": [
+        "Cartas se muestran boca abajo al inicio",
+        "Al encontrar una pareja, se quedan visibles",
+        "Cada pareja encontrada es un pequeño logro visual",
+        "Diseñado para estimular la memoria infantil"
+      ]
+    }
+  },
+  "verDemo": "Ver demo",
+  "verRepositorio": "Ver repositorio",
+  "motivacionTitulo": "Motivación",
+  "motivacionTexto": "Nunca imaginé que terminaría en el mundo del desarrollo web.\n\nDurante años me moví entre pacientes, documentos, gestiones y personas. Hacía de todo un poco: cuidaba, organizaba, resolvía. Me gustaba que las cosas funcionaran para los demás.\n\nPero algo dentro pedía más. Más creación, más desafío, más futuro.\n\nEmpecé a investigar qué más hay ahí fuera que no conociera… pero que conectara con quien ya soy, y donde pudiera serlo aún más.\n\nDescubrí que programar no era solo escribir código: era pensar soluciones, diseñar experiencias, mejorar sistemas y entender necesidades.\n\nNo dejé atrás lo que era. Lo transformé.\n\nHoy no atiendo pacientes, pero sigo escuchando. No gestiono papeles, pero organizo lógica. No traduzco idiomas, pero convierto ideas en interfaces.\n\nEl código también cuida, organiza y resuelve. Pero además construye. Y eso, para alguien como yo, fue una revolución.\n\nEsto no es un cambio de profesión. Es evolución con propósito.\n\nDesde entonces no he parado. No solo de aprender, sino de imaginar. Porque ahora, por fin, sé que puedo crear lo que antes solo administraba.",
+  "contactoTexto": "No vine a gustar.\nNo hago ruido.\nNo soy para todos.\nPero si algo de esto hizo clic…\n Aquí tienes mis coordenadas."
+}

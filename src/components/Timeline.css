@@ -1,0 +1,157 @@
+.section-container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.section-title {
+  font-family: 'Courier New', monospace;
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 12px #00bfff;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+}
+
+html.dark .section-title {
+  color: #8afaff;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+
+.timeline-svg {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.timeline-point {
+  stroke: white;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: filter 0.3s ease;
+}
+
+html.dark .timeline-point {
+  stroke: #66fcf1;
+}
+
+.timeline-label {
+  font-size: 0.85rem;
+  fill: #6200ff;
+  font-weight: 600;
+  user-select: none;
+}
+
+html.dark .timeline-label {
+  fill: #8afaff;
+}
+
+/* ───── Tooltip & Card ───── */
+.tooltip-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.tooltip-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 6px 8px 18px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  animation: fadeInBlur 0.3s ease-out forwards;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tooltip-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #6200ff;
+}
+
+.tooltip-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.85rem;
+  white-space: normal;
+}
+
+html.dark .tooltip-card {
+  background: rgba(16, 24, 39, 0.95);
+  color: #e0f2fe;
+  box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .tooltip-card h4 {
+  color: #8afaff;
+}
+
+/* ───── Arrow / Triangle ───── */
+.tooltip-arrow {
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #a855f7;
+  filter: drop-shadow(0 0 8px #a855f7);
+  transition: transform 0.2s ease;
+  animation: glow-pulse 1.5s infinite ease-in-out;
+}
+
+.tooltip-arrow:hover,
+.tooltip-arrow.interactive:hover {
+  transform: scale(1.3);
+}
+
+.tooltip-arrow.interactive {
+  cursor: pointer;
+}
+
+html.dark .tooltip-arrow {
+  border-top-color: #a855f7;
+  filter: drop-shadow(0 0 10px #a855f7);
+}
+
+/* ───── Animations ───── */
+@keyframes fadeInBlur {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 6px #a855f7);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 14px #a855f7);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 6px #a855f7);
+  }
+}

@@ -1,0 +1,217 @@
+/* === HERO LAYOUT === */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 4vh;
+    text-align: center;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.hero__content {
+    max-width: 800px;
+    z-index: 3;
+}
+
+.hero__content h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Courier New', monospace;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 40px #0ff;
+}
+
+/* === MATRIX LETTER === */
+.letter {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 5rem;
+    color: #ffffff;
+    text-shadow: 0 0 40px #0ff;
+    transition: color 0.3s ease;
+}
+
+/* === HERO SLOGAN === */
+html:not(.dark) .hero-slogan {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    text-shadow: 0 0 6px rgba(96, 165, 250, 0.3);
+    margin-bottom: 1rem;
+    text-align: center;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+
+html.dark .hero-slogan {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5rem;
+    color: #93c5fd;
+    text-shadow: 0 0 15px #93c5fd;
+    margin-bottom: 1rem;
+    text-align: center;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* === INTRO TEXT / HERO SUBTEXT === */
+.hero-subtext,
+.intro-text {
+    font-size: 1.4rem;
+    color: white;
+    opacity: 0.85;
+    margin-top: 1.5rem;
+    display: block;
+    line-height: 1.6;
+    max-width: 80ch;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+
+    /* 🔐 Solución anti-corte de palabras */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Animación fade in (opcional) */
+.intro-text {
+    font-size: 1.3rem;
+    color: white;
+    opacity: 0;
+    max-width: 80ch;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+
+    /* Solución de saltos */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+    /* Fade-in elegante */
+    animation: fadeInIntro 1.2s ease-out 3.5s forwards;
+}
+
+@keyframes fadeInIntro {
+    to {
+        opacity: 0.85;
+    }
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    word-break: keep-word;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+
+/* === SUB-LETTER (animación letra por letra) === */
+.sub-letter {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    animation: fadeUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 0.85;
+        transform: translateY(0);
+    }
+}
+
+/* === HERO IMAGE === */
+.hero-photo {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 1;
+
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 0%, black 20%),
+        linear-gradient(to top, transparent 0%, black 30%),
+        linear-gradient(to top right, transparent 0%, transparent 45%, black 60%);
+    mask-image:
+        linear-gradient(to right, transparent 0%, black 20%),
+        linear-gradient(to top, transparent 0%, black 30%),
+        linear-gradient(30deg, transparent 0%, transparent 27%, black 40%);
+    -webkit-mask-composite: intersect;
+    mask-composite: intersect;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.hero-photo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hero-text {
+    margin-left: 320px;
+    position: relative;
+    z-index: 3;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8vh;
+    }
+
+    .hero-photo {
+        position: static;
+        width: 180px;
+        margin-bottom: 1.5rem;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .hero-text {
+        margin-left: 0;
+    }
+
+    .hero__content h1 {
+        font-size: 2.8rem;
+    }
+
+    .letter {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+}

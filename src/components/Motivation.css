@@ -1,0 +1,95 @@
+.motivation-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8rem 1.5rem 12rem;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.motivation-textbox {
+    max-width: 720px;
+    max-height: 70vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 3rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+html.dark .motivation-textbox {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.motivation-textbox::-webkit-scrollbar {
+    width: 8px;
+}
+
+.motivation-textbox::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+html.dark .motivation-textbox::-webkit-scrollbar-thumb {
+    background-color: rgba(138, 250, 255, 0.4);
+}
+
+.typewriter-name {
+    font-family: 'Courier New', monospace;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 12px #00bfff;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+}
+
+html.dark .typewriter-name {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+.typewriter-text {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    white-space: pre-wrap;
+}
+
+html.dark .typewriter-text {
+    color: #c2f0ff;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1px;
+    height: 1.2em;
+    background-color: #ffffff;
+    animation: blink 1s steps(1) infinite;
+    margin-left: 2px;
+}
+
+html.dark .cursor {
+    background-color: #00ffff;
+}
+
+@keyframes blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}

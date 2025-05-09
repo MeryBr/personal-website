@@ -1,0 +1,101 @@
+.timeline-svg-container {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.section-title {
+    font-family: 'Courier New', monospace;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 12px #00bfff;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+html.dark .section-title {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+.contact-section {
+    padding: 4rem 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+html.dark .contact-section {
+    color: #e0f2fe;
+}
+
+.contact-description {
+    font-family: 'Courier New', monospace;
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 6px #00bfff;
+    max-width: 680px;
+}
+
+html.dark .contact-description {
+    color: #c2f0ff;
+    text-shadow: 0 0 6px #00ffff;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+html.dark .contact-item {
+    color: #e0f2fe;
+}
+
+.contact-item a {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00bfff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html.dark .contact-item a {
+    color: #8afaff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+.contact-item a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+html.dark .contact-item a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.contact-item svg {
+    color: #00bfff;
+    transition: transform 0.2s ease;
+}
+
+html.dark .contact-item svg {
+    color: #66fcf1;
+}
+
+.contact-item:hover svg {
+    transform: scale(1.15);
+}
