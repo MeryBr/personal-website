@@ -50,7 +50,7 @@ const Header: React.FC = () => {
     <header className="hero">
       <div className="hero__content-with-photo">
         <img
-          src="/AirBrush_20250503131434.png"
+          src="/personal-website/AirBrush_20250503131434.png"
           alt="Perfil"
           className="hero-photo"
         />

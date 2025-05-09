@@ -10,7 +10,6 @@
   align-items: center;
 }
 
-/* Línea 1: banderas + tema */
 .navbar-top {
   width: 100%;
   display: flex;
@@ -44,7 +43,6 @@
   text-shadow: 0 0 12px #00ffff;
 }
 
-/* Línea 2: enlaces de navegación */
 .navbar-links {
   position: absolute;
   top: 37vh;
@@ -118,7 +116,6 @@
   }
 }
 
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;

@@ -1,4 +1,3 @@
-/* === HERO LAYOUT === */
 .hero {
     position: relative;
     height: 100vh;
@@ -29,7 +28,6 @@
     text-shadow: 0 0 40px #0ff;
 }
 
-/* === MATRIX LETTER === */
 .letter {
     display: inline-block;
     font-family: 'Courier New', monospace;
@@ -39,7 +37,6 @@
     transition: color 0.3s ease;
 }
 
-/* === HERO SLOGAN === */
 html:not(.dark) .hero-slogan {
     font-family: 'Marck Script', cursive;
     font-size: 1.5rem;
@@ -69,7 +66,6 @@ html.dark .hero-slogan {
     }
 }
 
-/* === INTRO TEXT / HERO SUBTEXT === */
 .hero-subtext,
 .intro-text {
     font-size: 1.4rem;
@@ -84,13 +80,11 @@ html.dark .hero-slogan {
     margin-right: auto;
     padding: 0 1rem;
 
-    /* 🔐 Solución anti-corte de palabras */
     overflow-wrap: break-word;
     word-break: break-word;
     hyphens: auto;
 }
 
-/* Animación fade in (opcional) */
 .intro-text {
     font-size: 1.3rem;
     color: white;
@@ -101,12 +95,10 @@ html.dark .hero-slogan {
     margin: 1rem auto 0;
     padding: 0 1rem;
 
-    /* Solución de saltos */
     word-break: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
 
-    /* Fade-in elegante */
     animation: fadeInIntro 1.2s ease-out 3.5s forwards;
 }
 
@@ -125,7 +117,6 @@ html.dark .hero-slogan {
 }
 
 
-/* === SUB-LETTER (animación letra por letra) === */
 .sub-letter {
     opacity: 0;
     display: inline-block;
@@ -140,7 +131,6 @@ html.dark .hero-slogan {
     }
 }
 
-/* === HERO IMAGE === */
 .hero-photo {
     width: 300px;
     height: auto;
@@ -182,7 +172,6 @@ html.dark .hero-slogan {
     z-index: 3;
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
