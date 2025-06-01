@@ -11,56 +11,36 @@ import Footer from './components/Footer';
 import WaveBackground from './components/WaveBackground';
 
 const App: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<
-    'home' | 'trayectoria' | 'proyectos' | 'motivacion' | 'contacto'
-  >('home');
-
+  const [activeSection, setActiveSection] = useState<'home' | 'trayectoria' | 'proyectos' | 'motivacion' | 'contacto'>('home');
   const [animationKey, setAnimationKey] = useState(0);
   const scrollLockRef = useRef(false);
 
-  const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('theme');
-    return saved === 'dark';
-  });
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
 
   useEffect(() => {
     const html = document.documentElement;
-    if (darkMode) {
-      html.classList.add('dark');
-    } else {
-      html.classList.remove('dark');
-    }
+    html.classList.toggle('dark', darkMode);
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
-  const handleSectionChange = (
-    section: typeof activeSection,
-    forceAnimate = false
-  ) => {
+  const handleSectionChange = (section: typeof activeSection, forceAnimate = false) => {
     scrollLockRef.current = true;
     setActiveSection(section);
-    if (forceAnimate) {
-      setAnimationKey((prev) => prev + 1);
-    }
-
+    if (forceAnimate) setAnimationKey((prev) => prev + 1);
     const target = document.getElementById(section);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    setTimeout(() => {
-      scrollLockRef.current = false;
-    }, 500);
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => { scrollLockRef.current = false; }, 500);
   };
 
   return (
     <div
-      className={`min-h-screen text-white transition-colors duration-300 ${darkMode
-        ? 'bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-lime-300'
-        : 'bg-gradient-to-br from-indigo-600 via-cyan-500 to-teal-400 text-white'
+      className={`relative min-h-screen transition-colors duration-500 ${darkMode
+        ? 'bg-gradient-to-br from-[#0f0f2b] via-[#1c003b] to-[#000000] text-[#c3b8ff]'
+        : 'bg-gradient-to-br from-[#2c8eff] via-[#b8d1ff] to-[#d5aaff] text-white'
         }`}
     >
-      <div className="fixed inset-0 -z-10 pointer-events-none">
+
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden -z-10 pointer-events-none rotate-180">
         <WaveBackground />
       </div>
 
@@ -72,7 +52,7 @@ const App: React.FC = () => {
         setDarkMode={setDarkMode}
       />
 
-      <main className="App">
+      <main>
         <section id="home" key={activeSection === 'home' ? animationKey : undefined}>
           <Header />
         </section>

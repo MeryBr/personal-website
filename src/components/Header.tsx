@@ -15,7 +15,8 @@ const MatrixLetter = ({ targetChar, delay }: { targetChar: string; delay: number
   const [final, setFinal] = useState(false)
 
   useEffect(() => {
-    let interval: number
+    let interval: ReturnType<typeof setInterval>
+
     const timeout = setTimeout(() => {
       interval = setInterval(() => {
         setChar(getRandomChar())
@@ -48,28 +49,34 @@ const Header: React.FC = () => {
 
   return (
     <header className="hero">
-      <div className="hero__content-with-photo">
+      <div className="hero__content-with-photo w-full px-4 relative">
         <img
           src="/personal-website/AirBrush_20250503131434.png"
           alt="Perfil"
           className="hero-photo"
         />
 
-        <div className="hero__content">
-          <h1 className="hero-title">
-            {'Maria Bratash'.split('').map((char, i) => (
-              <MatrixLetter key={i} targetChar={char} delay={0.1 * i + 0.5} />
-            ))}
-          </h1>
-          <HandwrittenSlogan text={t('slogan')} delay={60} />
-          <div className="hero-subtext intro-text">
-            {introText.split('\n\n').map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+        <div className="hero-text">
+          <div className="hero__content">
+            <h1 className="hero-title">
+              {'Maria Bratash'.split('').map((char, i) => (
+                <MatrixLetter key={i} targetChar={char} delay={0.1 * i + 0.5} />
+              ))}
+            </h1>
+
+            <HandwrittenSlogan text={t('slogan')} delay={60} />
+
+            <div className="hero-subtext intro-text">
+              {introText.split('\n\n').map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </header>
+
+
   )
 }
 
