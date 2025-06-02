@@ -9,9 +9,10 @@
 .hero__content-with-photo {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 90vw;
     margin: 0 auto;
     align-items: start;
 }
@@ -37,8 +38,9 @@
 }
 
 .hero-text {
-    max-width: 1000px;
     width: 100%;
+    padding: 0 2rem;
+    justify-self: stretch;
     z-index: 3;
 }
 
