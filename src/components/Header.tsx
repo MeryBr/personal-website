@@ -49,7 +49,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="hero">
-      <div className="hero__content-with-photo w-full px-4 relative">
+      <div className="hero__content-with-photo">
         <img
           src="/personal-website/AirBrush_20250503131434.png"
           alt="Perfil"
@@ -63,9 +63,7 @@ const Header: React.FC = () => {
                 <MatrixLetter key={i} targetChar={char} delay={0.1 * i + 0.5} />
               ))}
             </h1>
-
             <HandwrittenSlogan text={t('slogan')} delay={60} />
-
             <div className="hero-subtext intro-text">
               {introText.split('\n\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
@@ -73,8 +71,12 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <div></div>
       </div>
     </header>
+
+
 
 
   )
