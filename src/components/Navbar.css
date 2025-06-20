@@ -93,12 +93,27 @@ html.dark .theme-switch button:hover {
   text-align: center;
 }
 
+html.dark .navbar-links button {
+  color: rgba(0, 191, 255, 0.5);
+  background: rgba(0, 191, 255, 0.04);
+  border: 1.2px solid rgba(0, 191, 255, 0.2);
+  box-shadow: 0 0 4px rgba(0, 191, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+html.dark .navbar-links button:hover {
+  background: rgba(0, 191, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+  color: #00bfff;
+  transform: scale(1.03);
+}
+
 html.dark .navbar-links button.active {
   color: #8afaff;
   text-shadow: 0 0 20px #00ffff;
   animation: subtleGlow 2.5s ease-in-out infinite;
   background: rgba(0, 191, 255, 0.15);
-  border-color: rgba(0, 191, 255, 0.5);
+  border-color: rgba(0, 191, 255, 0.692);
   box-shadow: 0 0 12px #00ffff88;
 }
 
@@ -110,86 +125,72 @@ html.dark .navbar-links button.active {
   color: #4400ff;
 }
 
-.language-switch button.active {
-  background: rgba(68, 0, 255, 0.2);
-  border-color: rgba(68, 0, 255, 0.6);
-  color: #4400ff;
-  box-shadow: 0 0 10px rgba(68, 0, 255, 0.7);
-  transform: scale(1.05);
-}
-
-html.dark .language-switch button.active {
-  background: rgba(0, 191, 255, 0.2);
-  border-color: rgba(0, 191, 255, 0.6);
-  color: #00bfff;
-  box-shadow: 0 0 12px rgba(0, 191, 255, 0.9);
-}
-
-
-.navbar-links button:hover {
-  background: rgba(68, 0, 255, 0.15);
-  color: #4400ff;
-  box-shadow: 0 0 8px #00bfff44;
-  transform: scale(1.03);
-}
-
-.language-switch {
-  display: flex;
-  gap: 0.5rem;
-  background: rgba(68, 0, 255, 0.05);
-  border: 1.2px solid rgba(68, 0, 255, 0.3);
-  border-radius: 30px;
-  padding: 0.2rem 0.5rem;
-  user-select: none;
-}
-
 .language-switch button {
   background: none;
   border: none;
-  font-size: 1.1rem;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: rgba(68, 0, 255, 0.7);
-  padding: 0.3rem 0.7rem;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  letter-spacing: 1px;
   text-shadow: none;
-}
-
-.language-switch button:hover {
-  background: rgba(68, 0, 255, 0.15);
-  color: #4400ff;
-  box-shadow: 0 0 8px #00bfff44;
-  transform: scale(1.1);
-}
-
-html.dark .language-switch {
-  background: rgba(0, 191, 255, 0.05);
-  border-color: rgba(0, 191, 255, 0.3);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 html.dark .language-switch button {
   color: rgba(0, 191, 255, 0.7);
 }
 
-html.dark .language-switch button:hover {
-  background: rgba(0, 191, 255, 0.15);
-  color: #00bfff;
-  box-shadow: 0 0 8px #00ffff44;
+.language-switch button:hover {
+  color: #4400ff;
+  transform: scale(1.2);
+  text-shadow: 0 0 8px #00bfff44;
 }
 
-@media (max-width: 768px) {
-  .navbar-links button {
-    font-size: 1rem;
-    padding: 0.3rem 1rem;
-  }
+html.dark .language-switch button:hover {
+  color: #00bfff;
+  text-shadow: 0 0 8px #00ffff44;
+}
 
-  .language-switch {
-    padding: 0.1rem 0.3rem;
-  }
+.language-switch button.active {
+  color: #4400ff;
+  text-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
+  transform: scale(1.1);
+}
 
-  .language-switch button {
-    font-size: 1rem;
-    padding: 0.2rem 0.5rem;
-  }
+html.dark .language-switch button.active {
+  color: #00bfff;
+  text-shadow: 0 0 12px rgba(0, 191, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.theme-switch {
+  margin-left: 1.5rem;
+}
+
+.theme-switch button {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #4400ff;
+  text-shadow: 0 0 10px #00bfff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+html.dark .theme-switch button {
+  color: #00bfff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.theme-switch button:hover {
+  transform: scale(1.2);
+  color: #4400ff;
+  text-shadow: 0 0 12px #8afaff;
+}
+
+html.dark .theme-switch button:hover {
+  color: #00bfff;
+  text-shadow: 0 0 12px #00bfff;
 }

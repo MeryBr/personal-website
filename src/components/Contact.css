@@ -55,7 +55,7 @@ html.dark .contact-item {
 
 .contact-item a {
     color: #4400ff;
-    text-shadow: 0 0 40px #00bfff;
+    text-shadow: 0 0 12px #4400ff91;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
