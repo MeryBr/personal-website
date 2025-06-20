@@ -5,26 +5,36 @@
     justify-content: center;
     align-items: flex-start;
     padding: 8rem 1.5rem 12rem;
-    background: transparent;
+    color: #4400ff;
     position: relative;
     z-index: 1;
 }
 
 .motivation-textbox {
-    max-width: 720px;
-    max-height: 70vh;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    padding: 3rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background: rgba(0, 195, 255, 0.2);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow:
+        inset 0 0 15px rgba(0, 191, 255, 0.3),
+        0 12px 36px rgba(0, 191, 255, 0.3);
+    border: 2px double rgba(0, 191, 255, 0.6);
+    text-align: center;
+    transform-origin: top center;
+    animation: openLetter 0.6s forwards ease-out;
+    overflow: hidden;
 }
+
 
 html.dark .motivation-textbox {
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow:
+        inset 0 0 20px rgba(0, 191, 255, 0.5),
+        0 12px 36px rgba(0, 191, 255, 0.5);
+    border-color: rgba(138, 250, 255, 0.6);
 }
 
 .motivation-textbox::-webkit-scrollbar {
@@ -32,8 +42,8 @@ html.dark .motivation-textbox {
 }
 
 .motivation-textbox::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
 }
 
 html.dark .motivation-textbox::-webkit-scrollbar-thumb {
@@ -41,15 +51,19 @@ html.dark .motivation-textbox::-webkit-scrollbar-thumb {
 }
 
 .typewriter-name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
     font-family: 'Courier New', monospace;
-    font-size: 2.6rem;
     font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 0 0 12px #00bfff;
-    letter-spacing: 2px;
-    margin-bottom: 4rem;
+    color: white;
+    text-shadow: 0 0 40px #00bfff;
+    margin-bottom: 1rem;
+    position: relative;
 }
+
+
 
 html.dark .typewriter-name {
     color: #8afaff;
@@ -58,14 +72,18 @@ html.dark .typewriter-name {
 
 .typewriter-text {
     font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
-    color: #ffffff;
+    opacity: 0.95;
+    margin-bottom: 0.5rem;
+    color: #4400ff;
     white-space: pre-wrap;
+    text-align: justify;
 }
 
 html.dark .typewriter-text {
-    color: #c2f0ff;
+    color: #00bfff;
+    opacity: 0.95;
 }
 
 .cursor {
@@ -92,4 +110,28 @@ html.dark .cursor {
     100% {
         opacity: 0;
     }
+}
+
+@keyframes openLetter {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.hero-slogan {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(150, 99, 231, 0.76);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+html:not(.dark) .hero-slogan {
+    color: #4009be;
+    text-shadow: 0 0 10px rgba(0, 255, 242, 0.74);
 }

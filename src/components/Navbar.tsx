@@ -67,10 +67,29 @@ const Navbar: React.FC<NavbarProps> = ({
     <nav className="navbar">
       <div className="navbar-top">
         <div className="language-theme-group">
+
           <div className="language-switch">
-            <button onClick={() => i18n.changeLanguage('es')} title="Español">🇪🇸</button>
-            <button onClick={() => i18n.changeLanguage('en')} title="English">🇬🇧</button>
-            <button onClick={() => i18n.changeLanguage('fr')} title="Français">🇫🇷</button>
+            <button
+              onClick={() => i18n.changeLanguage('es')}
+              className={i18n.language === 'es' ? 'active' : ''}
+              title="Español"
+            >
+              🇪🇸
+            </button>
+            <button
+              onClick={() => i18n.changeLanguage('en')}
+              className={i18n.language === 'en' ? 'active' : ''}
+              title="English"
+            >
+              🇬🇧
+            </button>
+            <button
+              onClick={() => i18n.changeLanguage('fr')}
+              className={i18n.language === 'fr' ? 'active' : ''}
+              title="Français"
+            >
+              🇫🇷
+            </button>
           </div>
           <div className="theme-switch">
             <button onClick={() => setDarkMode(prev => !prev)}>
@@ -93,6 +112,7 @@ const Navbar: React.FC<NavbarProps> = ({
         ))}
       </ul>
     </nav>
+
   )
 }
 

@@ -1,77 +1,47 @@
-.section-title {
-    font-family: 'Courier New', monospace;
-    font-size: 2.6rem;
-    font-weight: bold;
-    text-align: center;
-    color: #1e1e2f;
-    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
-    letter-spacing: 2px;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    transition: all 0.3s ease-in-out;
-}
-
-html.dark .section-title {
-    color: #b8faff;
-    text-shadow: 0 2px 10px rgba(0, 255, 255, 0.5);
-}
-
-.projects-section {
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
-}
-
 .project-card {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(120, 40, 248, 0.185);
     border-radius: 1rem;
     padding: 2rem;
     max-width: 700px;
     margin: 0 auto;
     backdrop-filter: blur(8px);
-    color: #0f5dee;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-}
-
-html.dark .project-card {
-    background: rgba(163, 173, 235, 0.3);
-    color: #c3b8ff;
+    text-align: center;
 }
 
 .project-title {
     font-size: 1.8rem;
-    color: #5331eb;
     margin-bottom: 0.5rem;
-}
-
-html.dark .project-title {
-    color: #a38fff;
+    color: #4400ff;
 }
 
 .project-date,
 .project-affiliation {
     font-size: 0.95rem;
-    opacity: 0.8;
+    opacity: 0.95;
     margin-bottom: 0.5rem;
+    color: #4400ff;
 }
 
+.project-description,
+.project-features {
+    text-align: justify;
+    color: #4400ff;
+}
+
+html.dark .project-title,
 html.dark .project-date,
-html.dark .project-affiliation {
-    opacity: 0.7;
-    color: #bbaeff;
-}
-
-.project-description {
-    margin: 1rem 0;
-    font-size: 1rem;
-    line-height: 1.6;
+html.dark .project-affiliation,
+html.dark .project-description,
+html.dark .project-features {
+    color: #00bfff;
 }
 
 .project-features {
     list-style: disc;
     padding-left: 1.5rem;
-    text-align: left;
+    margin-top: 1rem;
+    text-align: justify;
 }
 
 .project-features li {
@@ -97,5 +67,5 @@ html.dark .project-affiliation {
 
 .project-button:hover {
     background: #4400ff;
-    color: #f7c4eb;
+    color: #00bfff;
 }

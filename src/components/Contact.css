@@ -6,14 +6,20 @@
 }
 
 .section-title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
     font-family: 'Courier New', monospace;
-    font-size: 2.6rem;
     font-weight: bold;
-    text-align: center;
-    color: inherit;
-    text-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 0 0 40px #00bfff;
+    margin-bottom: 1rem;
+}
+
+html.dark .section-title {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
 }
 
 .contact-description {
@@ -23,9 +29,12 @@
     line-height: 1.8;
     padding: 0 1rem;
     margin-bottom: 3rem;
-    text-shadow: 0 0 6px rgba(0, 191, 255, 0.4);
+    color: #4400ff;
     max-width: 680px;
-    color: inherit;
+}
+
+html.dark .contact-description {
+    color: #00bfff;
 }
 
 .contact-item {
@@ -36,25 +45,44 @@
     margin-bottom: 1.5rem;
     font-family: 'Courier New', monospace;
     font-size: 1.2rem;
-    color: inherit;
+    color: #4400ff;
     text-align: center;
 }
 
+html.dark .contact-item {
+    color: #00bfff;
+}
+
 .contact-item a {
-    color: inherit;
-    text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
-    text-decoration: none;
-    transition: all 0.3s ease;
+    color: #4400ff;
+    text-shadow: 0 0 40px #00bfff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 10px white;
+    color: #8afaff;
+    text-shadow: 0 0 12px #4400ff;
+}
+
+html.dark .contact-item a {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+html.dark .contact-item a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 20px #00ffff;
 }
 
 .contact-item svg {
+    color: #8afaff;
+    text-shadow: 0 0 12px #4400ff;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+html.dark .contact-item svg {
     color: #00bfff;
-    transition: transform 0.2s ease;
+    text-shadow: 0 0 20px #00ffff;
 }
 
 .contact-item:hover svg {

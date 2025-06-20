@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 
-
+.text-with-shadow {
+    text-shadow: 0 0 8px rgba(0, 0, 255, 0.8);
+}
 
 .waves {
     width: 100%;

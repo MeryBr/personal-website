@@ -63,12 +63,13 @@ const Header: React.FC = () => {
                 <MatrixLetter key={i} targetChar={char} delay={0.1 * i + 0.5} />
               ))}
             </h1>
-            <HandwrittenSlogan text={t('slogan')} delay={60} />
+            {/* <HandwrittenSlogan text={t('slogan')} delay={60} /> */}
             <div className="hero-subtext intro-text">
               {introText.split('\n\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
             </div>
+
           </div>
         </div>
 

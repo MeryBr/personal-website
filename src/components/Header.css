@@ -11,7 +11,6 @@
     grid-template-columns: 1fr 2fr 1fr;
     gap: 1rem;
     width: 100%;
-    width: 100%;
     max-width: 90vw;
     margin: 0 auto;
     align-items: start;
@@ -50,33 +49,45 @@
     flex-wrap: wrap;
     font-size: 4rem;
     font-family: 'Courier New', monospace;
-    font-weight: bold;
+    font-weight: 900;
     color: white;
-    text-shadow: 0 0 40px #0ff;
+    text-shadow: 0 0 50px #00bfff;
     margin-bottom: 1rem;
+    letter-spacing: 0.05em;
 }
 
 .hero-slogan {
     font-family: 'Marck Script', cursive;
     font-size: 1.3rem;
-    color: #93c5fd;
-    text-shadow: 0 0 15px #93c5fd;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(150, 99, 231, 0.76);
     margin-bottom: 1rem;
     text-align: center;
 }
 
 html:not(.dark) .hero-slogan {
-    color: #1e3a8a;
-    text-shadow: 0 0 6px rgba(96, 165, 250, 0.3);
+    color: #4009be;
+    text-shadow: 0 0 10px rgba(0, 255, 242, 0.74);
 }
 
 .hero-subtext p {
-    font-size: 1.3rem;
-    color: white;
-    opacity: 0.85;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.15rem;
+    font-weight: 600;
+    opacity: 1;
+    margin-bottom: 0.7rem;
+    color: #4400ff;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.74);
+    line-height: 1.8;
+    text-align: start;
+    letter-spacing: 0.02em;
+}
+
+html.dark .hero-subtext p {
+    color: #00bfff;
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.9);
+    letter-spacing: 0.04em;
 }
 
 
@@ -100,5 +111,6 @@ html:not(.dark) .hero-slogan {
 
     .hero-text {
         max-width: 90%;
+        padding: 0 1rem;
     }
 }

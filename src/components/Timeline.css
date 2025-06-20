@@ -65,8 +65,8 @@ html.dark .timeline-label {
   border-radius: 16px;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #333;
-  box-shadow: 6px 8px 18px rgba(0, 0, 0, 0.35);
+  color: #000000;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
   backdrop-filter: blur(8px);
   animation: fadeInBlur 0.3s ease-out forwards;
   overflow-wrap: break-word;

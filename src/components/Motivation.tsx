@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Motivation.css';
+import HandwrittenSlogan from './HandwrittenSlogan';
 import { useTranslation } from 'react-i18next';
+import './Motivation.css';
 
 const TypewriterTitle: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const { t } = useTranslation();
@@ -14,14 +15,13 @@ const TypewriterTitle: React.FC<{ onComplete: () => void }> = ({ onComplete }) =
       setVisibleTitle(prev => {
         if (prev >= titleText.length) {
           clearInterval(interval);
-          setTimeout(() => {
-            setCursorVisible(false);
-            onComplete();
-          }, 2500);
+          setTimeout(() => onComplete(), 800);
+          setTimeout(() => setCursorVisible(false), 2200);
         }
         return prev + 1;
       });
-    }, 150);
+    }, 100);
+
     return () => clearInterval(interval);
   }, [onComplete, titleText]);
 
@@ -33,7 +33,7 @@ const TypewriterTitle: React.FC<{ onComplete: () => void }> = ({ onComplete }) =
   );
 };
 
-const TypewriterText: React.FC = () => {
+const TypewriterText: React.FC<{ onComplete?: () => void }> = ({ onComplete }) => {
   const { t } = useTranslation();
   const fullText = t('motivacionTexto');
   const [visibleChars, setVisibleChars] = useState(0);
@@ -43,12 +43,14 @@ const TypewriterText: React.FC = () => {
       setVisibleChars(prev => {
         if (prev >= fullText.length) {
           clearInterval(interval);
+          if (onComplete) onComplete();
+          return prev;
         }
         return prev + 1;
       });
     }, 60);
     return () => clearInterval(interval);
-  }, [fullText]);
+  }, [fullText, onComplete]);
 
   return (
     <p className="typewriter-text">
@@ -59,13 +61,23 @@ const TypewriterText: React.FC = () => {
 };
 
 const Motivation: React.FC = () => {
+  const { t } = useTranslation();
   const [textVisible, setTextVisible] = useState(false);
+  const [allTextComplete, setAllTextComplete] = useState(false);
 
   return (
     <section className="motivation-section">
       <div className="motivation-textbox">
         <TypewriterTitle onComplete={() => setTextVisible(true)} />
-        {textVisible && <TypewriterText />}
+        {textVisible && (
+          <TypewriterText onComplete={() => setAllTextComplete(true)} />
+        )}
+
+        {allTextComplete && (
+          <div style={{ marginTop: '2rem', color: '#4400ff', textAlign: 'center' }}>
+            <HandwrittenSlogan text={t('slogan')} delay={60} />
+          </div>
+        )}
       </div>
     </section>
   );
