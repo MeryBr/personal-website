@@ -44,43 +44,42 @@
 }
 
 .hero-title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 4rem;
-    font-family: 'Courier New', monospace;
-    font-weight: 900;
-    color: white;
-    text-shadow: 0 0 50px #00bfff;
-    margin-bottom: 4rem;
-    letter-spacing: 0.05em;
-}
-
-.hero-slogan {
-    font-family: 'Marck Script', cursive;
-    font-size: 1.3rem;
-    color: #00ffff;
-    text-shadow: 0 0 10px rgba(150, 99, 231, 0.76);
-    margin-bottom: 1rem;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 7rem;
+    color: #421f92;
+    -webkit-text-stroke: 1px rgba(44, 44, 44, 0.55);
+    text-shadow: 2px 2px 6px rgba(44, 44, 44, 0.4);
+    line-height: 1.1;
     text-align: center;
 }
 
-html:not(.dark) .hero-slogan {
-    color: #4009be;
-    text-shadow: 0 0 10px rgba(0, 255, 242, 0.74);
+html.dark .hero-title {
+    color: #ffffff;
+    text-shadow: 0 0 25px rgba(138, 250, 255, 0.7), 0 0 8px #8d6be1;
+}
+
+
+.hero-subtitle {
+    font-family: 'Judson', serif;
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: #a0a3b0;
+    margin-top: -2rem;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .hero-subtext p {
     font-family: 'Courier New', monospace;
     font-size: 1.15rem;
     font-weight: 600;
-    opacity: 1;
     margin-bottom: 0.7rem;
-    color: #4400ff;
-    text-shadow: 0 0 0.5px #4400ff6b;
-    line-height: 1.8;
+    line-height: 1.5;
     text-align: start;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
+    color: #3f09bebb;
+
 }
 
 html.dark .hero-subtext p {
@@ -89,7 +88,6 @@ html.dark .hero-subtext p {
     text-shadow: 0 0 15px rgba(0, 191, 255, 0.9);
     letter-spacing: 0.04em;
 }
-
 
 @media (max-width: 1024px) {
     .hero__content-with-photo {

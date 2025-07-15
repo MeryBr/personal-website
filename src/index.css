@@ -5,10 +5,6 @@
 @tailwind utilities;
 
 
-.text-with-shadow {
-    text-shadow: 0 0 8px rgba(0, 0, 255, 0.8);
-}
-
 .waves {
     width: 100%;
     height: 100%;
@@ -105,12 +101,88 @@
     height: 100%;
 }
 
-#home,
-#trayectoria,
-#proyectos,
-#motivacion,
-#contacto {
-    padding-bottom: 4rem;
-    min-height: 100vh;
-    box-sizing: border-box;
+
+@keyframes waveMoveSlow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+@keyframes waveMoveMedium {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes waveMoveFast {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+.animate-wave-slow {
+    animation: waveMoveSlow 22s linear infinite;
+}
+
+.animate-wave-medium {
+    animation: waveMoveMedium 16s linear infinite;
+}
+
+.animate-wave-fast {
+    animation: waveMoveFast 10s linear infinite;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: #4400ff;
+    background: transparent;
+}
+
+html.dark footer {
+    color: #8afaff;
+}
+
+.contact-section {
+    padding: 4rem 2rem 0rem;
+}
+
+.contact-description {
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 40px #482db2;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+html.dark .section-title {
+    color: #8afaff;
+    text-shadow: 0 0 12px #00ffff;
 }

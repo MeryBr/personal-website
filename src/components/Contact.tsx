@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.css';
 import { Mail, Linkedin, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import FlowingWave from './FlowingWave';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -20,10 +21,7 @@ const Contact: React.FC = () => {
 
       <div className="contact-item">
         <Mail size={20} />
-        <a
-          href="mailto:maria.bratash.dev@gmail.com"
-          aria-label="Correo electrónico de María Bratash"
-        >
+        <a href="mailto:maria.bratash.dev@gmail.com">
           maria.bratash.dev@gmail.com
         </a>
       </div>
@@ -34,7 +32,6 @@ const Contact: React.FC = () => {
           href="https://www.linkedin.com/in/bratash-maria/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn de María Bratash"
         >
           LinkedIn
         </a>
@@ -46,11 +43,17 @@ const Contact: React.FC = () => {
           href="https://github.com/MeryBr"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub de María Bratash"
         >
           GitHub
         </a>
       </div>
+
+      <div className="w-full overflow-hidden mt-8" style={{ zIndex: 0, position: 'relative' }}>
+        <FlowingWave />
+      </div>
+      <footer>
+        <p>&copy; Mery – 2025</p>
+      </footer>
     </section>
   );
 };

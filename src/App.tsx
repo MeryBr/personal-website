@@ -7,8 +7,6 @@ import Timeline from './components/Timeline';
 import Projects from './components/Projects';
 import Motivation from './components/Motivation';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
-import WaveBackground from './components/WaveBackground';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<'home' | 'trayectoria' | 'proyectos' | 'motivacion' | 'contacto'>('home');
@@ -36,14 +34,9 @@ const App: React.FC = () => {
     <div
       className={`relative min-h-screen transition-colors duration-500 ${darkMode
         ? 'bg-gradient-to-br from-[#0f0f2b] via-[#1c003b] to-[#000000] text-[#c3b8ff]'
-        : 'bg-gradient-to-br from-[#2c8eff] via-[#b8d1ff] to-[#d5aaff] text-white'
+        : 'bg-[radial-gradient(circle_at_top_left,_#FAF8F5,_#E6ECF0)] text-[#2C2C2C]'
         }`}
     >
-
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden -z-10 pointer-events-none rotate-180">
-        <WaveBackground />
-      </div>
-
       <Navbar
         activeSection={activeSection}
         setActiveSection={(section) => handleSectionChange(section, true)}
@@ -69,8 +62,6 @@ const App: React.FC = () => {
           <Contact />
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };

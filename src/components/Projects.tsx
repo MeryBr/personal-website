@@ -16,7 +16,13 @@ const projectData = [
     repo: 'https://github.com/MeryBr/buscador-personajes',
     demo: 'https://merybr.github.io/buscador-personajes/',
   },
+  {
+    id: 'mysticball',
+    repo: 'https://github.com/MeryBr/MysticBall',
+    demo: 'https://merybr.github.io/MysticBall/',
+  },
 ];
+
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();

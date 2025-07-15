@@ -10,7 +10,7 @@
 }
 
 .project-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     color: #4400ff;
 }
@@ -57,7 +57,7 @@ html.dark .project-features {
 
 .project-button {
     text-decoration: none;
-    background: #4400ff;
+    background: #8d6be1;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -66,6 +66,6 @@ html.dark .project-features {
 }
 
 .project-button:hover {
-    background: #4400ff;
-    color: #00bfff;
+    background: #4009be;
+    color: #ffffff;
 }

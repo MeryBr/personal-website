@@ -1,26 +1,12 @@
 .contact-section {
-    padding: 4rem 2rem 10rem;
+    padding: 4rem 2rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: -1.5rem;
 }
 
-.section-title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 4rem;
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 40px #00bfff;
-    margin-bottom: 1rem;
-}
 
-html.dark .section-title {
-    color: #8afaff;
-    text-shadow: 0 0 12px #00ffff;
-}
 
 .contact-description {
     font-family: 'Courier New', monospace;
@@ -28,7 +14,7 @@ html.dark .section-title {
     text-align: center;
     line-height: 1.8;
     padding: 0 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: #4400ff;
     max-width: 680px;
 }
@@ -42,7 +28,7 @@ html.dark .contact-description {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     font-family: 'Courier New', monospace;
     font-size: 1.2rem;
     color: #4400ff;
@@ -55,13 +41,13 @@ html.dark .contact-item {
 
 .contact-item a {
     color: #4400ff;
-    text-shadow: 0 0 12px #4400ff91;
+    text-shadow: 0 0 12px #8d6be1;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #8afaff;
-    text-shadow: 0 0 12px #4400ff;
+    color: #2600ff;
+    text-shadow: 0 0 12px #8afaff;
 }
 
 html.dark .contact-item a {
@@ -75,8 +61,8 @@ html.dark .contact-item a:hover {
 }
 
 .contact-item svg {
-    color: #8afaff;
-    text-shadow: 0 0 12px #4400ff;
+    color: #4009be;
+    text-shadow: 0 0 12px #8d6be1;
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -87,4 +73,17 @@ html.dark .contact-item svg {
 
 .contact-item:hover svg {
     transform: scale(1.15);
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    margin-top: -1.3rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #4009be;
+    opacity: 0.8;
 }
