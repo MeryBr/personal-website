@@ -40,6 +40,18 @@
                 "Chaque paire est une petite victoire visuelle",
                 "Conçu pour stimuler la mémoire des enfants"
             ]
+        },
+        "mysticball": {
+            "title": "MysticBall",
+            "date": "Juil. 2025",
+            "affiliation": "Projet personnel",
+            "description": "MysticBall est une boule magique qui répond avec du caractère. Sarcastique, énigmatique ou fuyante... selon son humeur du jour.",
+            "features": [
+                "Développé avec React + TypeScript",
+                "Réponses multilingues avec i18n",
+                "Effets visuels",
+                "Design interactif et responsive"
+            ]
         }
     },
     "verDemo": "Voir la démo",

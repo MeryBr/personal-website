@@ -40,6 +40,18 @@
         "Cada pareja encontrada es un pequeño logro visual",
         "Diseñado para estimular la memoria infantil"
       ]
+    },
+    "mysticball": {
+      "title": "MysticBall",
+      "date": "Jul. 2025",
+      "affiliation": "Proyecto personal",
+      "description": "MysticBall es una bola mágica que responde con personalidad...",
+      "features": [
+        "React + TypeScript",
+        "Respuestas multilingües con i18n",
+        "Efectos visuales",
+        "Diseño responsive e interactivo"
+      ]
     }
   },
   "verDemo": "Ver demo",

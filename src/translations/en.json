@@ -40,6 +40,18 @@
         "Each pair found brings a sense of achievement",
         "Designed to stimulate children’s memory skills"
       ]
+    },
+    "mysticball": {
+      "title": "MysticBall",
+      "date": "Jul. 2025",
+      "affiliation": "Personal project",
+      "description": "MysticBall is a magical orb that replies with attitude. Sarcastic, enigmatic or evasive... depending on its mood.",
+      "features": [
+        "Built with React + TypeScript",
+        "Multilingual answers using i18n",
+        "Mystical visual",
+        "Responsive and interactive design"
+      ]
     }
   },
   "verDemo": "View demo",

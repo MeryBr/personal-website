@@ -24,6 +24,7 @@
     "react-dom": "^19.0.0",
     "react-i18next": "^15.5.1",
     "react-router-dom": "^7.6.1",
+    "swiper": "^11.2.10",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
